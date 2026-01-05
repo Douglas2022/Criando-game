@@ -1,13 +1,13 @@
 class Game:
-    total_game = 0 #Variável de classe para contar o número total de jogos
+    Total_games = 0
     def __init__(self,Name = "",YearLauch = 0,Multiplayer = 0,Note = 0):
         self.Name = Name
         self.YearLAuch = YearLauch
         self.Multiplayer = Multiplayer
         self.Note = Note
-        Game.total_game += 1
-
-        self.TotalAvaluete = 0
+        Game.Total_games +=1
+        self.TotalAvaluete = 0  
+        
         self.evaluators = 0
 
     def __str__(self):
@@ -25,10 +25,12 @@ class Game:
         self.evaluators += 1
 
     def Averege(self):
-        print(f"Media do filme: {self.Name}: {self.TotalAvaluete / self.evaluators}")
+        print(f"Media do jogo: {self.Name}: {self.TotalAvaluete / self.evaluators}")
 
 Game1 = Game("Game of Strones",2017,False,9.2)
 Game2 = Game("Game of Zelda",2017,True,8.0)
+Game3 = Game("Residente evil 6",2019,True,7.0)
+
 
 Game1.tecnical_sheet()
 Game2.tecnical_sheet()
@@ -40,8 +42,9 @@ Game2.Avaluete(9.5)
 Game2.Avaluete(7.0)
 Game2.Averege()
 
-# Exibindo um número toal de jogos criados
-print(f"\nTotal de jogos criados: {Game.total_game}")
+print(f"\nTotal de jogos criados: {Game.Total_games}")
+
+
 
 
 
