@@ -33,6 +33,10 @@ Game1.Avaluete(9.5)
 Game1.Avaluete(7.0)
 Game1.Averege()
 
+Game2.Avaluete(9.5)
+Game2.Avaluete(7.0)
+Game2.Averege()
+
 
 
 
