@@ -25,7 +25,7 @@ biblioteca_cidade = Biblioteca("Biblioteca da cidade")
 # biblioteca_cidade = True
 biblioteca_shoping = Biblioteca("Biblioteca do shoping")
 
-print(biblioteca_cidade)
-print(biblioteca_shoping)
+biblioteca_cidade.alternar_estado()
+biblioteca_shoping.alternar_estado()
 
 Biblioteca.listar_biblioteca()
