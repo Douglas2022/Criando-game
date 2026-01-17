@@ -22,13 +22,13 @@ class Biblioteca:
     def ativo(self):
        return "Ativado" if self._ativo else "Desativado"
 
-Biblioteca_cidade = Biblioteca("Biblioteca da cidade")
-Biblioteca_shoping = Biblioteca("Biblioteca do shoping")
+# Biblioteca_cidade = Biblioteca("Biblioteca da cidade")
+# Biblioteca_shoping = Biblioteca("Biblioteca do shoping")
 
-Biblioteca_cidade.alternar_estado()
-Biblioteca_shoping.alternar_estado()
+# Biblioteca_cidade.alternar_estado()
+# Biblioteca_shoping.alternar_estado()
 
-Biblioteca.listar_biblioteca()
+# Biblioteca.listar_biblioteca()
 
 
 
