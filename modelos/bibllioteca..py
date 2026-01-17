@@ -9,9 +9,11 @@ class Biblioteca:
     def __str__(self):
         return self.nome
     
-    def listar_biblioteca():
+    @classmethod
+    def listar_biblioteca(cls):
+        print(f"{'Nome da biblioteca'.ljust(25)} | {'Status'}")
         for biblioteca in Biblioteca.Bibliotecas:
-            print(f"{biblioteca.nome} | {biblioteca.ativo}")
+            print(f"{biblioteca.nome.ljust(25)} | {biblioteca.ativo}")
 
     def alternar_estado(self):
         self._ativo = not self._ativo
@@ -21,13 +23,15 @@ class Biblioteca:
        return "Ativado" if self._ativo else "Desativado"
 
 Biblioteca_cidade = Biblioteca("Biblioteca da cidade")
-# Biblioteca_cidade.ativo = True
 Biblioteca_shoping = Biblioteca("Biblioteca do shoping")
 
 Biblioteca_cidade.alternar_estado()
 Biblioteca_shoping.alternar_estado()
 
 Biblioteca.listar_biblioteca()
+
+
+
         
         
 
