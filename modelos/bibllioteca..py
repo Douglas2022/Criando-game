@@ -1,0 +1,36 @@
+class Biblioteca:
+    Bibliotecas = []
+
+    def __init__(self,nome):
+        self.nome = nome
+        self._ativo = False
+        Biblioteca.Bibliotecas.append(self)
+
+    def __str__(self):
+        return self.nome
+    
+    def listar_biblioteca():
+        for biblioteca in Biblioteca.Bibliotecas:
+            print(f"{biblioteca.nome} | {biblioteca.ativo}")
+
+    def alternar_estado(self):
+        self._ativo = not self._ativo
+
+    @property
+    def ativo(self):
+       return "Ativado" if self._ativo else "Desativado"
+
+Biblioteca_cidade = Biblioteca("Biblioteca da cidade")
+# Biblioteca_cidade.ativo = True
+Biblioteca_shoping = Biblioteca("Biblioteca do shoping")
+
+Biblioteca_cidade.alternar_estado()
+Biblioteca_shoping.alternar_estado()
+
+Biblioteca.listar_biblioteca()
+        
+        
+
+
+
+    
