@@ -1,9 +1,12 @@
+from modelos.avaliacao import Avaliacao
+
 class Biblioteca:
     Bibliotecas = []
 
     def __init__(self,nome):
         self.nome = nome
         self._ativo = False
+        self._avaliacao = []
         Biblioteca.Bibliotecas.append(self)
 
     def __str__(self):
@@ -30,7 +33,9 @@ class Biblioteca:
 
 # Biblioteca.listar_biblioteca()
 
-
+    def receber_avaliacao(self,cliente,nota):
+        avaliacao = Avaliacao(cliente,nota)
+        self._avaliacao.append(avaliacao)
 
         
         

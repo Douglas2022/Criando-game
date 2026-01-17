@@ -8,5 +8,10 @@ biblioteca_cidade.alternar_estado()
 def main():
     Biblioteca.listar_biblioteca()
 
+def main():
+    Biblioteca.listar_biblioteca()
+    
+    
+
 if __name__ == "__main":
    main()
