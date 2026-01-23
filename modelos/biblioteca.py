@@ -17,14 +17,15 @@ class Biblioteca:
 
     @property
     def ativo(self):
-     "Ativado" if self._ativo else "Desativado"
+        return "Ativado" if self._ativo else "Desativado"
         
         
 biblioteca_cidade = Biblioteca("Biblioteca da cidade") 
 biblioteca_shoping = Biblioteca("Biblioteca do shoping") 
 
-print(biblioteca_cidade)
-print(biblioteca_shoping)
+biblioteca_cidade.alternar_estado()
+biblioteca_shoping.alternar_estado()
+
 
 Biblioteca.listar_biblioteca()
 
