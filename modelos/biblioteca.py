@@ -21,14 +21,14 @@ class Biblioteca:
         return "Ativado" if self._ativo else "Desativado"
         
         
-biblioteca_cidade = Biblioteca("Biblioteca da cidade") 
-biblioteca_shoping = Biblioteca("Biblioteca do shoping") 
+# biblioteca_cidade = Biblioteca("Biblioteca da cidade") 
+# biblioteca_shoping = Biblioteca("Biblioteca do shoping") 
 
-biblioteca_cidade.alternar_estado()
-biblioteca_shoping.alternar_estado()
+# biblioteca_cidade.alternar_estado()
+# biblioteca_shoping.alternar_estado()
 
 
-Biblioteca.listar_biblioteca()
+# Biblioteca.listar_biblioteca()
 
 
 
