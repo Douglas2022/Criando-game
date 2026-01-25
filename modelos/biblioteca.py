@@ -27,7 +27,15 @@ class Biblioteca:
         avaliacao = Avaliacao(cliente,nota)
         self._avaliacao.append(avaliacao)
 
-        
+
+    @property
+    def media_avaliacao(self):
+        if not self._avaliacao:
+            return '-'
+        soma = sum(avaliacao.nota for avaliacao in self._avaliacao )
+        media = round(soma / len(self._avaliacao),1)
+        return media
+
 
 
 
