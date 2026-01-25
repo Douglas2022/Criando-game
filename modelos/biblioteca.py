@@ -10,10 +10,8 @@ class Biblioteca:
     
     @classmethod
     def listar_biblioteca(cls):
-        print(f"{'Nome da biblioteca'.ljust(25)} | {'Status'}")
-        for biblioteca in Biblioteca.bibliotecas:
-            print(f"{biblioteca.nome.ljust(25)} | {biblioteca.ativo}")
-
+        for biblioiteca in Biblioteca.bibliotecas:
+            print(f"{biblioiteca.nome} | {biblioiteca.ativo}")
     def alternar_estado(self):
         self._ativo = not self._ativo
 
@@ -28,7 +26,10 @@ biblioteca_shoping = Biblioteca("Biblioteca do shoping")
 biblioteca_cidade.alternar_estado()
 biblioteca_shoping.alternar_estado()
 
-biblioteca_cidade.listar_biblioteca()
+
+Biblioteca.listar_biblioteca()
+
+
 
 
 
